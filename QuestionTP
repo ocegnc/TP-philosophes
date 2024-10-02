@@ -1,0 +1,8 @@
+Combien y a-t-il de baguettes ?
+    Il y en a 3 dont chacun tiens un bout en rond
+
+Question 1 : Regarder dans le code la prise en charge du multithread et expliquer comment les accès concurrents sont gérés.
+    Il y a un verrou implicite pour la prise de baguettes
+
+Question 2 : Est-ce un deadlock ou une famine ? Pourquoi ce blocage apparaît-il ?
+    C'est un deadlock car cela bloque si chaque philosophe a une baguette car aucun ne la relâche avant d'avoir pris la suivante.
